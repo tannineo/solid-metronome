@@ -1,0 +1,6 @@
+# project folders
+**/.git/
+**/node_modules/
+
+# build files
+**/dist/

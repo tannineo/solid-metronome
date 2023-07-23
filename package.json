@@ -3,13 +3,20 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
+    "dev": "astro dev --host 0.0.0.0 --port 8888",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.9.1"
+    "@astrojs/solid-js": "^2.2.0",
+    "astro": "^2.9.1",
+    "solid-js": "^1.4.3"
+  },
+  "devDependencies": {
+    "@unocss/reset": "^0.53.6",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.11.0",
+    "unocss": "^0.53.6"
   }
 }

@@ -1,4 +1,13 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config'
+import UnoCSS from 'unocss/astro'
+import solidJs from '@astrojs/solid-js'
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  integrations: [
+    UnoCSS({
+      injectReset: true,
+    }),
+    solidJs(),
+  ],
+})
