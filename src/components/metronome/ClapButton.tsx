@@ -1,5 +1,5 @@
 import { actionClapIt } from '../../store/metronomeStatus'
-import BaseButton from './BaseButton'
+import BaseButton from '../base/RoundButton'
 
 const ClapButton = () => {
   return (

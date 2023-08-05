@@ -1,4 +1,4 @@
 import { persistentAtom } from '@nanostores/persistent'
-import { PATTERNS } from '../consts'
+import { PATTERNS, PERSIST_KEYS } from '../consts'
 
-export const p$pattern = persistentAtom<PATTERNS>('pattern', PATTERNS.CROCHES)
+export const p$pattern = persistentAtom<PATTERNS>(PERSIST_KEYS.PATTERN, PATTERNS.CROCHES)

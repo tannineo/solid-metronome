@@ -1,6 +1,6 @@
 import { Accessor, Show } from 'solid-js'
 
-import BaseButton from './BaseButton.tsx'
+import BaseButton from '../base/RoundButton.tsx'
 
 const PlayButton = (props: {
   playing: boolean

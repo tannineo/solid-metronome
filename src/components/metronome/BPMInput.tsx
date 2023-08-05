@@ -2,15 +2,15 @@ import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
 import { actionSetBpm, p$bpm } from '../../store/bpm'
-import BaseButton from './BaseButton'
+import BaseButton from '../base/RoundButton'
 import { MAX_BPM, MIN_BPM } from '../../consts'
 
 import styles from './BPMInput.module.css'
 
-const BPMInput = (props: { min?: number; max?: number }) => {
+const BPMInput = _props => {
   // default value
-  const minBpm = props.min ?? MIN_BPM
-  const maxBpm = props.max ?? MAX_BPM
+  const minBpm = MIN_BPM
+  const maxBpm = MAX_BPM
 
   const bpm = useStore(p$bpm)
 
@@ -36,10 +36,10 @@ const BPMInput = (props: { min?: number; max?: number }) => {
       <div class='w-full max-w-screen-sm p-4' u-flex='~ row items-center justify-center'>
         <input
           class={clsx(
-            'outline-none ring-none rounded-md bg-keshizumi p-4 w-64 h-32',
+            'outline-none ring-none rounded-md bg-keshizumi p-2 w-60 h-24',
             styles.customInput,
           )}
-          u-text='7xl center byakuroku'
+          u-text='6xl center byakuroku'
           value={bpm()}
           type='number'
           min={minBpm}
@@ -64,7 +64,7 @@ const BPMInput = (props: { min?: number; max?: number }) => {
         </div>
 
         <input
-          class='w-full p-4'
+          class='w-full'
           value={bpm()}
           type='range'
           min={minBpm}

@@ -1,9 +1,9 @@
 import { persistentAtom } from '@nanostores/persistent'
 import { action } from 'nanostores'
 
-import { DEVAULT_BPM, MAX_BPM, MIN_BPM } from '../consts'
+import { DEFAULT_BPM, MAX_BPM, MIN_BPM, PERSIST_KEYS } from '../consts'
 
-export const p$bpm = persistentAtom<number>('bpm', DEVAULT_BPM, {
+export const p$bpm = persistentAtom<number>(PERSIST_KEYS.BPM, DEFAULT_BPM, {
   encode: (value: number): string => {
     return value.toString()
   },
@@ -11,7 +11,7 @@ export const p$bpm = persistentAtom<number>('bpm', DEVAULT_BPM, {
     try {
       return parseInt(value)
     } catch (err) {
-      return DEVAULT_BPM
+      return DEFAULT_BPM
     }
   },
 })

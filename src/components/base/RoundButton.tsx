@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { ComponentProps, ParentProps, children } from 'solid-js'
 
-const BaseButton = (props: ParentProps<{ onClick?: () => any; mini?: boolean }>) => {
+const RoundButton = (props: ParentProps<{ onClick?: () => any; mini?: boolean }>) => {
   const c = children(() => props.children)
 
   return (
@@ -19,4 +19,4 @@ const BaseButton = (props: ParentProps<{ onClick?: () => any; mini?: boolean }>)
   )
 }
 
-export default BaseButton
+export default RoundButton

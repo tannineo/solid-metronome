@@ -7,10 +7,13 @@ import PlayButton from './metronome/PlayButton'
 import ClapButton from './metronome/ClapButton'
 import { calAvgInterval } from '../utils'
 import { actionSetBpm } from '../store/bpm'
-import Toggle from './metronome/Toggle'
+import Toggle from './base/Toggle'
+import BeatsPerLoopInput from './metronome/BeatsPerLoopInput'
+import { p$stressFirstBeat } from '../store/stressFirstBeat'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)
+  const stressFirstBeat = useStore(p$stressFirstBeat)
 
   createEffect(() => {
     if (metronomeStatus().claps.length >= 2) {
@@ -21,7 +24,7 @@ const Metronome = () => {
   })
 
   return (
-    <div class='w-full h-full p-8' u-flex='~ col items-center justify-center'>
+    <div class='w-full h-full p-4' u-flex='~ col items-center justify-center'>
       <BPMInput />
 
       <div class='' u-flex='~ row items-center justify-center'>
@@ -33,7 +36,16 @@ const Metronome = () => {
         />
       </div>
 
-      <Toggle />
+      <div class='flex flex-col md:flex-row items-center justify-center'>
+        <div class='flex flex-row items-center justify-center'>
+          <Toggle
+            checked={stressFirstBeat()}
+            onChange={(toggle: boolean) => p$stressFirstBeat.set(toggle)}
+          />
+          <span class='text-shironeri'>Stress first beats</span>
+        </div>
+        <BeatsPerLoopInput />
+      </div>
     </div>
   )
 }
