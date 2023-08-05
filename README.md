@@ -1,6 +1,6 @@
 # solid-metronome
 
-Astro + SolidJS + UnoCSS
+Astro + SolidJS + UnoCSS + nanostore
 
 Mini proejct for personal practice (coding and playing music)
 
