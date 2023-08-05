@@ -13,7 +13,6 @@
     "@astrojs/solid-js": "^2.2.0",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
-    "abcjs": "^6.2.2",
     "astro": "^2.9.1",
     "clsx": "^2.0.0",
     "lodash": "^4.17.21",
