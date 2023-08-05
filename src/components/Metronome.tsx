@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/solid'
-import { createEffect, on } from 'solid-js'
+import { createEffect } from 'solid-js'
 
 import { $metronomeStatus } from '../store/metronomeStatus'
 import BPMInput from './metronome/BPMInput'
