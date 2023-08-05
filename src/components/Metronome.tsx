@@ -5,9 +5,10 @@ import { $metronomeStatus } from '../store/metronomeStatus'
 import BPMInput from './metronome/BPMInput'
 import PlayButton from './metronome/PlayButton'
 import ClapButton from './metronome/ClapButton'
-import Toggle from './metronome/Toggle'
+import ExampleToggle from './metronome/ExampleToggle'
 import { calAvgInterval } from '../utils'
 import { actionSetBpm } from '../store/bpm'
+import Toggle from './metronome/Toggle'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)
