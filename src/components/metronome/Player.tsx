@@ -1,11 +1,15 @@
 import { useStore } from '@nanostores/solid'
 import range from 'lodash/range'
-import { For, createEffect, createSignal } from 'solid-js'
+import { For, createEffect, createSignal, on } from 'solid-js'
 
 import { p$beatsPerLoop } from '../../store/beatsPerLoop'
 import PlayerIndicator from './PlayerIndicator'
 import { $metronomeStatus } from '../../store/metronomeStatus'
 import { p$bpm } from '../../store/bpm'
+import { playMap, playNoires } from '../../sounds'
+import { p$pattern } from '../../store/pattern'
+import { PATTERNS } from '../../consts'
+import { p$stressFirstBeat } from '../../store/stressFirstBeat'
 
 let playerInterval: number | null = null
 
@@ -13,8 +17,30 @@ const Player = () => {
   const metronomeStatus = useStore($metronomeStatus)
   const bpm = useStore(p$bpm)
   const beatsPerLoop = useStore(p$beatsPerLoop)
+  const pattern = useStore(p$pattern)
+  const stressFirstBeats = useStore(p$stressFirstBeat)
 
-  const [count, setCount] = createSignal(0) // Nth beat in a loop
+  const [count, setCount] = createSignal(-1) // Nth beat in a loop
+  const [beatInterval, setBeatInterval] = createSignal(0)
+
+  createEffect(() => {
+    switch (pattern()) {
+      case PATTERNS.CROCHES:
+        setBeatInterval((60 * 1000) / bpm() / 2)
+        break
+      case PATTERNS.DOUBLES:
+        setBeatInterval((60 * 1000) / bpm() / 4)
+        break
+      case PATTERNS.TRIOLETS:
+        setBeatInterval((60 * 1000) / bpm() / 3)
+        break
+      case PATTERNS.SHUFFLE:
+        setBeatInterval(((60 * 1000) / bpm() / 4) * 3)
+        break
+      default:
+      // PATTERNS.NOIRES: no need calculating interval
+    }
+  })
 
   createEffect(() => {
     console.log('Player effect: begin, always clear playerInterval')
@@ -24,8 +50,9 @@ const Player = () => {
       console.log('Player effect: start playing')
       playerInterval = setInterval(
         () => {
-          // TODO play sound here, maybe use setTimeout for some beats
-          setCount((count() + 1) % beatsPerLoop())
+          const nextBeat = (count() + 1) % beatsPerLoop()
+          setCount(nextBeat)
+          playMap[pattern()](beatInterval(), stressFirstBeats() && nextBeat === 0)
         },
         (60 * 1000) / bpm(),
       )
