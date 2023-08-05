@@ -44,6 +44,9 @@ jobs:
         run: pnpm install
       - name: Build Astro site
         run: pnpm build
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v2
+        with: dist
 
   deploy:
     needs: build
@@ -55,5 +58,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
-        with:
-          artifact_name: dist
