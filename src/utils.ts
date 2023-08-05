@@ -13,5 +13,5 @@ export const calAvgInterval = (numbers: number[]) => {
     sum += numbers[i + 1] - numbers[i]
   }
 
-  return Math.floor(sum / numbers.length - 1)
+  return Math.floor(sum / (numbers.length - 1))
 }
