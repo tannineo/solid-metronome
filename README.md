@@ -13,6 +13,7 @@ Mini proejct for personal practice (coding and playing music)
   - [x] stress first beats
   - [x] persisted configs in localStore
 - [ ] custom sounds (sound file options, volumes)
+- [ ] OG image
 - [ ] progressive web app (remain at the top of your mobile phone)
   - [ ] notification everyday for practicing
 
