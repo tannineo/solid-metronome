@@ -24,6 +24,7 @@ const Player = () => {
       console.log('Player effect: start playing')
       playerInterval = setInterval(
         () => {
+          // TODO play sound here, maybe use setTimeout for some beats
           setCount((count() + 1) % beatsPerLoop())
         },
         (60 * 1000) / bpm(),
