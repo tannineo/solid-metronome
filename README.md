@@ -8,13 +8,13 @@ Mini proejct for personal practice (coding and playing music)
 
 ## TODO
 
-- [x] Basic Metronome with:
+- [x] Basic metronome with:
   - [x] 5 patterns
-  - [x] stress first beats
-  - [x] persisted configs in localStore
-- [ ] custom sounds (sound file options, volumes)
-- [ ] progressive web app (remain at the top of your mobile phone)
-  - [ ] notification everyday for practicing
+  - [x] Stress first beats
+  - [x] Persisted configs in localStore
+- [ ] Custom sounds (sound file options, volumes)
+- [ ] Progressive Web App (remain at the top of your mobile phone)
+  - [ ] Notification everyday for practicing
 
 ## About
 
