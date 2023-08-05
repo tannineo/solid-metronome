@@ -33,13 +33,16 @@ const BPMInput = _props => {
 
   return (
     <div class='w-full' u-flex='~ col items-center justify-center'>
-      <div class='w-full max-w-screen-sm p-4' u-flex='~ row items-center justify-center'>
+      <div
+        class='w-full max-w-screen-sm py-0 px-4 md:py-4'
+        u-flex='~ row items-center justify-center'
+      >
         <input
           class={clsx(
-            'outline-none ring-none rounded-md bg-keshizumi p-2 w-60 h-24',
+            'outline-none ring-none rounded-md bg-keshizumi p-2 w-40 h-16 md:w-60 md:h-24',
             styles.customInput,
           )}
-          u-text='6xl center byakuroku'
+          u-text='3xl md:6xl center byakuroku'
           value={bpm()}
           type='number'
           min={minBpm}
@@ -49,7 +52,7 @@ const BPMInput = _props => {
         ></input>
       </div>
 
-      <div class='w-full p-4' u-flex='~ row items-center justify-center'>
+      <div class='w-full p-2 md:p-4' u-flex='~ row items-center justify-center'>
         <div>
           <BaseButton
             mini
