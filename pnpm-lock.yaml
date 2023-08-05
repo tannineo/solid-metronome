@@ -17,6 +17,9 @@ dependencies:
   '@nanostores/solid':
     specifier: ^0.4.2
     version: 0.4.2(nanostores@0.9.3)(solid-js@1.7.8)
+  abcjs:
+    specifier: ^6.2.2
+    version: 6.2.2
   astro:
     specifier: ^2.9.1
     version: 2.9.1
@@ -1258,6 +1261,10 @@ packages:
 
   /@vscode/l10n@0.0.14:
     resolution: {integrity: sha512-/yrv59IEnmh655z1oeDnGcvMYwnEzNzHLgeYcQCkhYX0xBvYWrAuefoiLcPBUkMpJsb46bqQ6Yv4pwTTQ4d3Qg==}
+    dev: false
+
+  /abcjs@6.2.2:
+    resolution: {integrity: sha512-M5pvTb+0yABqScZBEN/bZmrMgX+iTtgD8vxAVTaKNNVt+ivyCzx0SLNYlTXYErlXu7QvPIoIiSPRojne6M24PA==}
     dev: false
 
   /acorn-jsx@5.3.2(acorn@8.10.0):

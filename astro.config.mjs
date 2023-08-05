@@ -12,4 +12,8 @@ export default defineConfig({
     solidJs(),
     mdx(),
   ],
+
+  // deploy to github pages
+  site: 'https://tannineo.github.io',
+  base: '/solid-metronome',
 })

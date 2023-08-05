@@ -2,6 +2,10 @@
 const { href } = Astro.props
 ---
 
-<a class='hover:underline mx-4 p-1' u-text='md lg byakuroku' href={href}>
+<a
+  class='hover:underline mx-4 p-1 flex flex-row items-center justify-center'
+  u-text='md lg byakuroku hover:shironeri'
+  href={href}
+>
   <slot />
 </a>

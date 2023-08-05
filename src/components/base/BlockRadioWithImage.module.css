@@ -1,0 +1,5 @@
+.radio::after {
+  content: var(--content-image);
+  transform: scale(0.5);
+  width: 100%;
+}

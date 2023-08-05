@@ -10,6 +10,7 @@ import { actionSetBpm } from '../store/bpm'
 import Toggle from './base/Toggle'
 import BeatsPerLoopInput from './metronome/BeatsPerLoopInput'
 import { p$stressFirstBeat } from '../store/stressFirstBeat'
+import PatternSelection from './metronome/PatternSelection'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)
@@ -46,6 +47,8 @@ const Metronome = () => {
         </div>
         <BeatsPerLoopInput />
       </div>
+
+      <PatternSelection />
     </div>
   )
 }

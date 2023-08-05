@@ -4,5 +4,6 @@ import Metronome from '../components/Metronome.tsx'
 ---
 
 <BaseLayout>
+  <!-- TODO Must be client:only, nanostore cannot init correctly with SSR -->
   <Metronome client:only />
 </BaseLayout>
