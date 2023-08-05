@@ -1,8 +1,8 @@
-import { defineConfig, presetAttributify, presetUno } from 'unocss'
+import { defineConfig, presetAttributify, presetUno, presetIcons } from 'unocss'
 
 export default defineConfig({
   content: {
-    filesystem: ['src/**/*.{js,jsx,ts,tsx,astro}'],
+    filesystem: ['src/**/*.{js,jsx,ts,tsx,astro,mdx}'],
   },
   presets: [
     presetAttributify({
@@ -10,6 +10,15 @@ export default defineConfig({
       prefixedOnly: true,
     }),
     presetUno(),
+    presetIcons({
+      collections: {
+        mdi: () => import('@iconify-json/mdi/icons.json').then(i => i.default),
+      },
+      extraProperties: {
+        display: 'inline-block',
+        'vertical-align': 'middle',
+      },
+    }),
   ],
   theme: {
     colors: {
@@ -18,6 +27,7 @@ export default defineConfig({
       keshizumi: '#434343',
       ai: '#0d5661',
       byakuroku: '#a8d8b9',
+      shironeri: '#fcfaf2',
     },
   },
 })

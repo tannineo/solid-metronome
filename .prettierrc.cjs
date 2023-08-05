@@ -1,7 +1,7 @@
 module.exports = {
   semi: false,
-  arrowParens: 'avoid',
-  trailingComma: 'all',
+  arrowParens: "avoid",
+  trailingComma: "all",
   singleQuote: true,
   jsxSingleQuote: true,
 
@@ -9,14 +9,14 @@ module.exports = {
   tabWidth: 2,
   printWidth: 100,
 
-  plugins: [require.resolve('prettier-plugin-astro')],
+  plugins: [require.resolve("prettier-plugin-astro")],
   astroAllowShorthand: false,
   overrides: [
     {
-      files: '*.astro',
+      files: "*.astro",
       options: {
-        parser: 'astro',
+        parser: "astro",
       },
     },
   ],
-}
+};
