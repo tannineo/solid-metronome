@@ -1,7 +1,7 @@
 import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
-import { p$bpm } from '../../store/bpm'
+import { actionSetBpm, p$bpm } from '../../store/bpm'
 import BaseButton from './BaseButton'
 import { MAX_BPM, MIN_BPM } from '../../consts'
 
@@ -15,7 +15,7 @@ const BPMInput = (props: { min?: number; max?: number }) => {
   const bpm = useStore(p$bpm)
 
   const setBpm = (value: number) => {
-    p$bpm.set(value)
+    actionSetBpm(value)
   }
 
   const inputNumberHandler = e => {
