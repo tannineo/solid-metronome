@@ -1,24 +1,22 @@
-import { Accessor, Setter, createSignal } from 'solid-js'
+import clsx from 'clsx'
+import { useStore } from '@nanostores/solid'
+
+import { p$bpm } from '../../store/bpm'
+import BaseButton from './BaseButton'
+import { MAX_BPM, MIN_BPM } from '../../consts'
 
 import styles from './BPMInput.module.css'
-import clsx from 'clsx'
-import BaseButton from './BaseButton'
 
-const BPMInput = ({
-  bpm,
-  setBpm,
-  min,
-  max,
-  ...props
-}: {
-  bpm: Accessor<number>
-  setBpm: Setter<number>
-  min?: number
-  max?: number
-}) => {
+const BPMInput = (props: { min?: number; max?: number }) => {
   // default value
-  const minBpm = min ?? 20
-  const maxBpm = max ?? 300
+  const minBpm = props.min ?? MIN_BPM
+  const maxBpm = props.max ?? MAX_BPM
+
+  const bpm = useStore(p$bpm)
+
+  const setBpm = (value: number) => {
+    p$bpm.set(value)
+  }
 
   const inputNumberHandler = e => {
     let value = parseInt(e.target.value)

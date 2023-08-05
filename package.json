@@ -11,8 +11,11 @@
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
     "@astrojs/solid-js": "^2.2.0",
+    "@nanostores/persistent": "^0.9.1",
+    "@nanostores/solid": "^0.4.2",
     "astro": "^2.9.1",
     "clsx": "^2.0.0",
+    "nanostores": "^0.9.3",
     "solid-js": "^1.4.3"
   },
   "devDependencies": {

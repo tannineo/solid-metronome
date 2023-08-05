@@ -2,25 +2,21 @@ import { Accessor, Show } from 'solid-js'
 
 import BaseButton from './BaseButton.tsx'
 
-const PlayButton = ({
-  playing,
-  onClickToPlay,
-  onClickToPause,
-}: {
-  playing: Accessor<boolean>
+const PlayButton = (props: {
+  playing: boolean
   onClickToPlay: () => any
   onClickToPause: () => any
 }) => {
   return (
     <Show
-      when={playing()}
+      when={props.playing}
       fallback={
-        <BaseButton onClick={onClickToPlay}>
+        <BaseButton onClick={props.onClickToPlay}>
           <div class='i-mdi-play text-6xl' />
         </BaseButton>
       }
     >
-      <BaseButton onClick={onClickToPause}>
+      <BaseButton onClick={props.onClickToPause}>
         <div class='i-mdi-pause text-6xl' />
       </BaseButton>
     </Show>
