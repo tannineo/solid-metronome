@@ -11,7 +11,7 @@ Mini proejct for personal practice (coding and playing music)
 - [x] Basic metronome with:
   - [x] 5 patterns
   - [x] Stress first beats
-  - [x] Persisted configs in localStore
+  - [x] Persisted configs in localStorage
 - [ ] Custom sounds (sound file options, volumes)
 - [ ] OG image
 - [ ] Progressive Web App (remain at the top of your mobile phone)
