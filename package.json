@@ -13,20 +13,20 @@
     "@astrojs/solid-js": "^2.2.0",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/solid": "^0.4.2",
-    "astro": "^2.9.1",
+    "astro": "^2.10.4",
     "clsx": "^2.0.0",
     "howler": "^2.2.3",
     "lodash": "^4.17.21",
     "nanostores": "^0.9.3",
-    "solid-js": "^1.4.3"
+    "solid-js": "^1.7.10"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.53",
-    "@types/lodash": "^4.14.196",
-    "@unocss/preset-icons": "^0.53.6",
-    "@unocss/reset": "^0.53.6",
-    "prettier": "^3.0.0",
+    "@iconify-json/mdi": "^1.1.54",
+    "@types/lodash": "^4.14.197",
+    "@unocss/preset-icons": "^0.55.0",
+    "@unocss/reset": "^0.55.0",
+    "prettier": "^3.0.1",
     "prettier-plugin-astro": "^0.11.0",
-    "unocss": "^0.53.6"
+    "unocss": "^0.55.0"
   }
 }
