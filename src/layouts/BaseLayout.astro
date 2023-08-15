@@ -11,7 +11,7 @@ const { title } = Astro.props
     <link rel='icon' type='image/svg+xml' href='/solid-metronome/favicon.svg' />
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta name='generator' content={Astro.generator} />
-    <title>Metronome{title ? ' - title' : ''}</title>
+    <title>Metronome{title ? ' - ' + title : ''}</title>
   </head>
   <body>
     <div class='w-full min-h-screen bg-sumi' u-flex='~ col items-center justify-center'>
