@@ -1,5 +1,9 @@
 import { Howl } from 'howler'
 
+export const changeVolume = (vol: number) => {
+  Howler.volume(vol / 100)
+}
+
 const Do = new Howl({
   src: ['/solid-metronome/metronome/do.ogg'],
 })

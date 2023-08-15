@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import clsx from 'clsx'
 
 const PlayerIndicator = (props: { highlight?: boolean }) => {

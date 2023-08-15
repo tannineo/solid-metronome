@@ -1,9 +1,12 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro'
 import Metronome from '../components/Metronome.tsx'
+import MetronomeExtraPanel from '../components/MetronomeExtraPanel.tsx'
 ---
 
 <BaseLayout>
   <!-- TODO Must be client:only, nanostore cannot init correctly with SSR -->
-  <Metronome client:only />
+  <Metronome client:only='solid-js' />
+
+  <MetronomeExtraPanel client:only='react' />
 </BaseLayout>

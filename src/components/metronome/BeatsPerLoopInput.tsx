@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import { useStore } from '@nanostores/solid'
 
 import { MAX_BEATS_PER_LOOP, MIN_BEATS_PER_LOOP } from '../../consts'

@@ -8,6 +8,10 @@ export const MAX_BEATS_PER_LOOP = 12
 
 export const MAX_CLAP_INTERVAL = (60 / MIN_BPM) * 1000 // ms
 
+export const DEFAULT_VOLUME = 80
+export const MIN_VOLUME = 0
+export const MAX_VOLUME = 100
+
 export enum PATTERNS {
   NOIRES = 'noires',
   CROCHES = 'croches',
@@ -22,4 +26,5 @@ export const PERSIST_KEYS = {
   PATTERN: PERSIST_KEY_PREFIX + 'pattern',
   BPM: PERSIST_KEY_PREFIX + 'bpm',
   BEATS_PER_LOOP: PERSIST_KEY_PREFIX + 'beatsPerLoop',
+  VOLUME: PERSIST_KEY_PREFIX + 'volume',
 }

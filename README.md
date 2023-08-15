@@ -17,6 +17,19 @@ Mini proejct for personal practice (coding and playing music)
 - [ ] Progressive Web App (remain at the top of your mobile phone)
   - [ ] Notification everyday for practicing
 
+## Hybrid Dev using multiple frontend frameworks
+
+- SolidJS
+  ```typescript
+  /** @jsxImportSource solid-js */
+  /** @jsx preserve */
+  ```
+- React
+  ```typescript
+  /** @jsxImportSource react */
+  /** @jsx react-jsx */
+  ```
+
 ## Briefing for Bilibili
 
 [B-Briefing.md](docs/B-Briefing.md)

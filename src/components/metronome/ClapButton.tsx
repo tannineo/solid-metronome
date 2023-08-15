@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import { actionClapIt } from '../../store/metronomeStatus'
 import BaseButton from '../base/RoundButton'
 

@@ -1,3 +1,4 @@
+/** @jsxImportSource solid-js */
 import clsx from 'clsx'
 import { ParentProps, children } from 'solid-js'
 

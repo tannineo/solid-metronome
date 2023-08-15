@@ -1,3 +1,5 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
 import { useStore } from '@nanostores/solid'
 import { createEffect } from 'solid-js'
 

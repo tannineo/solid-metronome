@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import { useStore } from '@nanostores/solid'
 import range from 'lodash/range'
 import { For, createEffect, createSignal, on } from 'solid-js'

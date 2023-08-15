@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 

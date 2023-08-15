@@ -1,3 +1,6 @@
+/** @jsxImportSource solid-js */
+/** @jsx preserve */
+
 import { useStore } from '@nanostores/solid'
 
 import { PATTERNS } from '../../consts'
