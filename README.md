@@ -12,7 +12,9 @@ Mini proejct for personal practice (coding and playing music)
   - [x] 5 patterns
   - [x] Stress first beats
   - [x] Persisted configs in localStorage
-- [ ] Custom sounds (sound file options, volumes)
+- [ ] Custom sounds
+  - [ ] sound sample options
+  - [x] volumes (in React)
 - [ ] OG image
 - [ ] Progressive Web App (remain at the top of your mobile phone)
   - [ ] Notification everyday for practicing
