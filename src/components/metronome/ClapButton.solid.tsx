@@ -1,7 +1,7 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 
 import { actionClapIt } from '../../store/metronomeStatus'
-import BaseButton from '../base/RoundButton'
+import BaseButton from '../base/RoundButton.solid'
 
 const ClapButton = () => {
   return (

@@ -1,4 +1,4 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 // cannot use content-[''] in unocss, which is different from tailwind
 // see https://github.com/unocss/unocss/issues/124#issuecomment-981532905
 

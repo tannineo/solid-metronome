@@ -1,11 +1,11 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 
 import { useStore } from '@nanostores/solid'
 import range from 'lodash/range'
 import { For, createEffect, createSignal, on } from 'solid-js'
 
 import { p$beatsPerLoop } from '../../store/beatsPerLoop'
-import PlayerIndicator from './PlayerIndicator'
+import PlayerIndicator from './PlayerIndicator.solid'
 import { $metronomeStatus } from '../../store/metronomeStatus'
 import { p$bpm } from '../../store/bpm'
 import { playMap, playNoires } from '../../sounds'

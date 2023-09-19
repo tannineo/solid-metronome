@@ -1,9 +1,9 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 
 import { useStore } from '@nanostores/solid'
 
 import { PATTERNS } from '../../consts'
-import BlockRadioWithImage from '../base/BlockRadioWithImage'
+import BlockRadioWithImage from '../base/BlockRadioWithImage.solid'
 import { p$pattern } from '../../store/pattern'
 
 const onClickSetPattern = (pattern: PATTERNS) => {

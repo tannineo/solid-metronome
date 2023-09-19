@@ -22,9 +22,13 @@ Mini proejct for personal practice (coding and playing music)
 ## Hybrid Dev using multiple frontend frameworks
 
 - SolidJS
+
   ```typescript
-  /** @jsxImportSource solid-js */
+  /** @jsxImportSource solid-js/h */
   ```
+
+  see: https://github.com/parcel-bundler/parcel/issues/8148
+
 - React
   ```typescript
   /** @jsxImportSource react */

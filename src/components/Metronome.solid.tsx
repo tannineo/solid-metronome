@@ -1,18 +1,18 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 import { useStore } from '@nanostores/solid'
 import { createEffect } from 'solid-js'
 
 import { $metronomeStatus } from '../store/metronomeStatus'
-import BPMInput from './metronome/BPMInput'
-import PlayButton from './metronome/PlayButton'
-import ClapButton from './metronome/ClapButton'
+import BPMInput from './metronome/BPMInput.solid'
+import PlayButton from './metronome/PlayButton.solid'
+import ClapButton from './metronome/ClapButton.solid'
 import { calAvgInterval } from '../utils'
 import { actionSetBpm } from '../store/bpm'
-import Toggle from './base/Toggle'
-import BeatsPerLoopInput from './metronome/BeatsPerLoopInput'
+import Toggle from './base/Toggle.solid'
+import BeatsPerLoopInput from './metronome/BeatsPerLoopInput.solid'
 import { p$stressFirstBeat } from '../store/stressFirstBeat'
-import PatternSelection from './metronome/PatternSelection'
-import Player from './metronome/Player'
+import PatternSelection from './metronome/PatternSelection.solid'
+import Player from './metronome/Player.solid'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)

@@ -15,12 +15,12 @@
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/react": "^0.7.1",
     "@nanostores/solid": "^0.4.2",
-    "@types/howler": "^2.2.7",
-    "@types/react": "^18.2.20",
+    "@types/howler": "^2.2.9",
+    "@types/react": "^18.2.22",
     "@types/react-dom": "^18.2.7",
     "astro": "^3.1.1",
     "clsx": "^2.0.0",
-    "howler": "^2.2.3",
+    "howler": "^2.2.4",
     "lodash": "^4.17.21",
     "nanostores": "^0.9.3",
     "react": "^18.2.0",
@@ -29,11 +29,11 @@
   },
   "devDependencies": {
     "@iconify-json/mdi": "^1.1.54",
-    "@types/lodash": "^4.14.197",
+    "@types/lodash": "^4.14.198",
     "@unocss/preset-icons": "^0.55.0",
     "@unocss/reset": "^0.55.0",
-    "prettier": "^3.0.1",
-    "prettier-plugin-astro": "^0.11.0",
+    "prettier": "^3.0.3",
+    "prettier-plugin-astro": "^0.12.0",
     "unocss": "^0.55.7"
   }
 }

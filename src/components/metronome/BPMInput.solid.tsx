@@ -1,10 +1,10 @@
-/** @jsxImportSource solid-js */
+/** @jsxImportSource solid-js/h */
 
 import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
 import { actionSetBpm, p$bpm } from '../../store/bpm'
-import BaseButton from '../base/RoundButton'
+import BaseButton from '../base/RoundButton.solid'
 import { MAX_BPM, MIN_BPM } from '../../consts'
 
 import styles from './BPMInput.module.css'
