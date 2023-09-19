@@ -6,7 +6,6 @@ import { actionSetVolume, p$volume } from '../store/volume'
 import { useEffect } from 'react'
 import { changeVolume } from '../sounds'
 
-/** @jsx react-jsx */
 const MetronomeExtraPanel = () => {
   const volume = useStore(p$volume)
 
