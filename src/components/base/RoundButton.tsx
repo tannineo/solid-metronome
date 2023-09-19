@@ -1,6 +1,8 @@
 /** @jsxImportSource solid-js */
+import type { ParentProps } from 'solid-js'
+
 import clsx from 'clsx'
-import { ParentProps, children } from 'solid-js'
+import { children } from 'solid-js'
 
 const RoundButton = (props: ParentProps<{ onClick?: () => any; mini?: boolean }>) => {
   const c = children(() => props.children)

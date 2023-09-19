@@ -1,5 +1,4 @@
 /** @jsxImportSource solid-js */
-/** @jsx preserve */
 
 import clsx from 'clsx'
 

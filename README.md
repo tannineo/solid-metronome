@@ -24,12 +24,10 @@ Mini proejct for personal practice (coding and playing music)
 - SolidJS
   ```typescript
   /** @jsxImportSource solid-js */
-  /** @jsx preserve */
   ```
 - React
   ```typescript
   /** @jsxImportSource react */
-  /** @jsx react-jsx */
   ```
 
 ## Briefing for Bilibili

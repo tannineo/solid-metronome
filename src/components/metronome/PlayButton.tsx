@@ -1,6 +1,4 @@
 /** @jsxImportSource solid-js */
-/** @jsx preserve */
-
 import { Show } from 'solid-js'
 
 import BaseButton from '../base/RoundButton.tsx'
