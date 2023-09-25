@@ -7,7 +7,7 @@ import { actionSetBpm, p$bpm } from '../../store/bpm'
 import BaseButton from '../base/RoundButton.solid'
 import { MAX_BPM, MIN_BPM } from '../../consts'
 
-import styles from './BPMInput.module.css'
+import styles from './NumberInputAsText.module.css'
 
 const BPMInput = _props => {
   // default value

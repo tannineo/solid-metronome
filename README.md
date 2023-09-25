@@ -15,6 +15,7 @@ Mini proejct for personal practice (coding and playing music)
 - [ ] Custom sounds
   - [ ] sound sample options
   - [x] volumes (in React)
+- [ ] BPM resets - allow user to quickly switch to commonly used BPM values
 - [ ] OG image
 - [ ] Progressive Web App (remain at the top of your mobile phone)
   - [ ] Notification everyday for practicing
@@ -27,7 +28,7 @@ Mini proejct for personal practice (coding and playing music)
   /** @jsxImportSource solid-js/h */
   ```
 
-  see: https://github.com/parcel-bundler/parcel/issues/8148
+  see Solid-js CHANGELOG: https://github.com/solidjs/solid/blob/main/CHANGELOG.md?plain=1#L473
 
 - React
   ```typescript

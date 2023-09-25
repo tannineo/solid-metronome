@@ -1,10 +1,8 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
+    "jsxImportSource": "solid-js/h",
     "jsx": "preserve",
-    "allowImportingTsExtensions": true,
-    "alias": {
-      "solid-js/h/jsx-dev-runtime": "solid-js/h/jsx-runtime"
-    }
+    "allowImportingTsExtensions": true
   }
 }

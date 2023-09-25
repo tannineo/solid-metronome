@@ -1,7 +1,6 @@
 import { defineConfig } from 'astro/config'
 import UnoCSS from 'unocss/astro'
 import solidJs from '@astrojs/solid-js'
-import mdx from '@astrojs/mdx'
 
 import react from '@astrojs/react'
 
@@ -11,9 +10,9 @@ export default defineConfig({
     UnoCSS({
       injectReset: true,
     }),
-    mdx(),
-    react({ include: ['components/**/*.react.tsx'] }),
     solidJs({ include: ['components/**/*.solid.tsx'] }),
+
+    react({ include: ['components/**/*.react.tsx'] }),
   ],
   // deploy to github pages
   site: 'https://tannineo.github.io',
