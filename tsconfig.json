@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "jsxImportSource": "solid-js/h",
     "jsx": "preserve",
     "allowImportingTsExtensions": true
   }

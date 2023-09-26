@@ -1,4 +1,5 @@
 /** @jsxImportSource solid-js/h */
+
 // cannot use content-[''] in unocss, which is different from tailwind
 // see https://github.com/unocss/unocss/issues/124#issuecomment-981532905
 
@@ -11,7 +12,7 @@ const Toggle = (props: { checked: boolean; onChange: (toggle: boolean) => any })
       type='checkbox'
       role='switch'
       checked={props.checked}
-      onChange={e => props.onChange(e.target.checked)}
+      onChange={(e: any) => props.onChange(e.target.checked)}
     />
   )
 }
