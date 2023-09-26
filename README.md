@@ -15,6 +15,7 @@ Mini proejct for personal practice (coding and playing music)
 - [ ] Custom sounds
   - [ ] sound sample options
   - [x] volumes (in React)
+- [ ] BPM presets
 - [ ] OG image
 - [ ] Progressive Web App (remain at the top of your mobile phone)
   - [ ] Notification everyday for practicing
