@@ -25,6 +25,7 @@ export const PERSIST_KEYS = {
   STRESS_FIRST_BEAT: PERSIST_KEY_PREFIX + 'stressFirstBeat',
   PATTERN: PERSIST_KEY_PREFIX + 'pattern',
   BPM: PERSIST_KEY_PREFIX + 'bpm',
+  BPM_PRESETS: PERSIST_KEY_PREFIX + 'bpmPresets',
   BEATS_PER_LOOP: PERSIST_KEY_PREFIX + 'beatsPerLoop',
   VOLUME: PERSIST_KEY_PREFIX + 'volume',
 }

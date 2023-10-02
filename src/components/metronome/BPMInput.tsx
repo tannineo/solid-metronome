@@ -4,10 +4,10 @@ import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
 import { actionSetBpm, p$bpm } from '../../store/bpm'
-import BaseButton from '../base/RoundButton'
+import RoundButton from '../base/RoundButton'
 import { MAX_BPM, MIN_BPM } from '../../consts'
 
-import styles from './BPMInput.module.css'
+import styles from './customInput.module.css'
 
 const BPMInput = _props => {
   // default value
@@ -56,7 +56,7 @@ const BPMInput = _props => {
 
       <div class='w-full p-2 md:p-4' u-flex='~ row items-center justify-center'>
         <div>
-          <BaseButton
+          <RoundButton
             mini
             onClick={() => {
               let value = bpm() - 1
@@ -65,7 +65,7 @@ const BPMInput = _props => {
             }}
           >
             <span class='text-2xl'>-</span>
-          </BaseButton>
+          </RoundButton>
         </div>
 
         <input
@@ -80,7 +80,7 @@ const BPMInput = _props => {
         ></input>
 
         <div>
-          <BaseButton
+          <RoundButton
             mini
             onClick={() => {
               let value = bpm() + 1
@@ -89,7 +89,7 @@ const BPMInput = _props => {
             }}
           >
             <span class='text-2xl'>+</span>
-          </BaseButton>
+          </RoundButton>
         </div>
       </div>
     </div>

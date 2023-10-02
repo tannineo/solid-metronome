@@ -13,6 +13,7 @@ import BeatsPerLoopInput from './metronome/BeatsPerLoopInput'
 import { p$stressFirstBeat } from '../store/stressFirstBeat'
 import PatternSelection from './metronome/PatternSelection'
 import Player from './metronome/Player'
+import BPMPreset from './metronome/BPMPreset'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)
@@ -29,6 +30,12 @@ const Metronome = () => {
   return (
     <div class='w-full h-full p-4' u-flex='~ col items-center justify-center'>
       <BPMInput />
+
+      <div class='mx-auto' u-flex='~ row items-center justify-center'>
+        <BPMPreset at={0} />
+        <BPMPreset at={1} />
+        <BPMPreset at={2} />
+      </div>
 
       <Player />
 
