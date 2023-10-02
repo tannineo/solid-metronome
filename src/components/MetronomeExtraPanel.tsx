@@ -1,4 +1,5 @@
 /** @jsxImportSource react */
+// WARN deprecated, Solid does not work well on Astro
 
 import { useStore } from '@nanostores/react'
 import { MAX_VOLUME, MIN_VOLUME } from '../consts'

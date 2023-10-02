@@ -14,6 +14,7 @@ import { p$stressFirstBeat } from '../store/stressFirstBeat'
 import PatternSelection from './metronome/PatternSelection'
 import Player from './metronome/Player'
 import BPMPreset from './metronome/BPMPreset'
+import Volume from './metronome/Volume'
 
 const Metronome = () => {
   const metronomeStatus = useStore($metronomeStatus)
@@ -60,6 +61,8 @@ const Metronome = () => {
       </div>
 
       <PatternSelection />
+
+      <Volume />
     </div>
   )
 }
