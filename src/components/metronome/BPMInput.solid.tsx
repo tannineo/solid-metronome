@@ -3,9 +3,9 @@
 import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
-import { actionSetBpm, p$bpm } from '../../store/bpm'
-import RoundButton from '../base/RoundButton'
-import { MAX_BPM, MIN_BPM } from '../../consts'
+import { actionSetBpm, p$bpm } from '../../store/bpm.ts'
+import RoundButton from '../base/RoundButton.solid.tsx'
+import { MAX_BPM, MIN_BPM } from '../../consts.ts'
 
 import styles from './customInput.module.css'
 

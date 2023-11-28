@@ -1,11 +1,10 @@
 /** @jsxImportSource react */
-// WARN deprecated, Solid does not work well on Astro
-
 import { useStore } from '@nanostores/react'
-import { MAX_VOLUME, MIN_VOLUME } from '../consts'
-import { actionSetVolume, p$volume } from '../store/volume'
 import { useEffect } from 'react'
-import { changeVolume } from '../sounds'
+
+import { MAX_VOLUME, MIN_VOLUME } from '../consts.ts'
+import { actionSetVolume, p$volume } from '../store/volume.ts'
+import { changeVolume } from '../sounds.ts'
 
 const MetronomeExtraPanel = () => {
   const volume = useStore(p$volume)

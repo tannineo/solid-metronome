@@ -1,7 +1,7 @@
 /** @jsxImportSource solid-js */
 
-import { actionClapIt } from '../../store/metronomeStatus'
-import BaseButton from '../base/RoundButton'
+import { actionClapIt } from '../../store/metronomeStatus.ts'
+import BaseButton from '../base/RoundButton.solid.tsx'
 
 const ClapButton = () => {
   return (

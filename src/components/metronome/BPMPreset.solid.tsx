@@ -3,10 +3,10 @@
 import clsx from 'clsx'
 import { useStore } from '@nanostores/solid'
 
-import { actionSetBpm } from '../../store/bpm'
-import { p$bpmPresets, actionSetBpmPreset } from '../../store/bpmPresets'
-import { MAX_BPM, MIN_BPM } from '../../consts'
-import RoundButton from '../base/RoundButton'
+import { actionSetBpm } from '../../store/bpm.ts'
+import { p$bpmPresets, actionSetBpmPreset } from '../../store/bpmPresets.ts'
+import { MAX_BPM, MIN_BPM } from '../../consts.ts'
+import RoundButton from '../base/RoundButton.solid.tsx'
 
 import styles from './customInput.module.css'
 

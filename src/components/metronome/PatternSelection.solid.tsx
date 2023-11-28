@@ -2,9 +2,9 @@
 
 import { useStore } from '@nanostores/solid'
 
-import { PATTERNS } from '../../consts'
-import BlockRadioWithImage from '../base/BlockRadioWithImage'
-import { p$pattern } from '../../store/pattern'
+import { PATTERNS } from '../../consts.ts'
+import BlockRadioWithImage from '../base/BlockRadioWithImage.solid.tsx'
+import { p$pattern } from '../../store/pattern.ts'
 
 const onClickSetPattern = (pattern: PATTERNS) => {
   return () => {

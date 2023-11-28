@@ -2,9 +2,9 @@
 
 import { useStore } from '@nanostores/solid'
 
-import { MAX_BEATS_PER_LOOP, MIN_BEATS_PER_LOOP } from '../../consts'
-import { actionSetBeatsPerLoop, p$beatsPerLoop } from '../../store/beatsPerLoop'
-import BaseButton from '../base/RoundButton'
+import { MAX_BEATS_PER_LOOP, MIN_BEATS_PER_LOOP } from '../../consts.ts'
+import { actionSetBeatsPerLoop, p$beatsPerLoop } from '../../store/beatsPerLoop.ts'
+import BaseButton from '../base/RoundButton.solid.tsx'
 
 const BeatsPerLoopInput = _props => {
   const minBeatsPerLoop = MIN_BEATS_PER_LOOP

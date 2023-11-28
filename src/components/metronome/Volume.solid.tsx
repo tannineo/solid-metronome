@@ -3,9 +3,9 @@
 import { createEffect } from 'solid-js'
 import { useStore } from '@nanostores/solid'
 
-import { MAX_VOLUME, MIN_VOLUME } from '../../consts'
-import { actionSetVolume, p$volume } from '../../store/volume'
-import { changeVolume } from '../../sounds'
+import { MAX_VOLUME, MIN_VOLUME } from '../../consts.ts'
+import { actionSetVolume, p$volume } from '../../store/volume.ts'
+import { changeVolume } from '../../sounds.ts'
 
 const Volume = () => {
   const volume = useStore(p$volume)

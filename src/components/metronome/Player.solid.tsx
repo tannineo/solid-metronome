@@ -4,14 +4,14 @@ import { useStore } from '@nanostores/solid'
 import range from 'lodash/range'
 import { For, createEffect, createSignal, on } from 'solid-js'
 
-import { p$beatsPerLoop } from '../../store/beatsPerLoop'
-import PlayerIndicator from './PlayerIndicator'
-import { $metronomeStatus } from '../../store/metronomeStatus'
-import { p$bpm } from '../../store/bpm'
-import { playMap, playNoires } from '../../sounds'
-import { p$pattern } from '../../store/pattern'
-import { PATTERNS } from '../../consts'
-import { p$stressFirstBeat } from '../../store/stressFirstBeat'
+import { p$beatsPerLoop } from '../../store/beatsPerLoop.ts'
+import PlayerIndicator from './PlayerIndicator.solid.tsx'
+import { $metronomeStatus } from '../../store/metronomeStatus.ts'
+import { p$bpm } from '../../store/bpm.ts'
+import { playMap } from '../../sounds.ts'
+import { p$pattern } from '../../store/pattern.ts'
+import { PATTERNS } from '../../consts.ts'
+import { p$stressFirstBeat } from '../../store/stressFirstBeat.ts'
 
 let playerInterval: number | null = null
 
