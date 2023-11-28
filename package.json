@@ -3,37 +3,38 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev --host 0.0.0.0 --port 8888",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
+    "dev": "bunx astro dev --host 0.0.0.0 --port 8888",
+    "build": "bunx astro build",
+    "preview": "bunx astro preview",
+    "astro": "bunx astro",
+    "deps:update": "bunx npm-check -u"
   },
   "dependencies": {
-    "@astrojs/mdx": "^1.1.0",
-    "@astrojs/react": "^3.0.2",
-    "@astrojs/solid-js": "^3.0.1",
+    "@astrojs/mdx": "^1.1.5",
+    "@astrojs/react": "^3.0.6",
+    "@astrojs/solid-js": "^3.0.2",
     "@nanostores/persistent": "^0.9.1",
     "@nanostores/react": "^0.7.1",
     "@nanostores/solid": "^0.4.2",
-    "@types/howler": "^2.2.7",
-    "@types/react": "^18.2.20",
-    "@types/react-dom": "^18.2.7",
-    "astro": "^3.1.1",
+    "@types/howler": "^2.2.11",
+    "@types/react": "^18.2.39",
+    "@types/react-dom": "^18.2.17",
+    "astro": "^3.6.1",
     "clsx": "^2.0.0",
-    "howler": "^2.2.3",
+    "howler": "^2.2.4",
     "lodash": "^4.17.21",
-    "nanostores": "^0.9.3",
+    "nanostores": "^0.9.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "solid-js": "^1.7.12"
+    "solid-js": "^1.8.6"
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.54",
-    "@types/lodash": "^4.14.197",
-    "@unocss/preset-icons": "^0.55.0",
-    "@unocss/reset": "^0.55.0",
-    "prettier": "^3.0.1",
-    "prettier-plugin-astro": "^0.11.0",
-    "unocss": "^0.55.7"
+    "@iconify-json/mdi": "^1.1.57",
+    "@types/lodash": "^4.14.202",
+    "@unocss/preset-icons": "^0.57.7",
+    "@unocss/reset": "^0.57.7",
+    "prettier": "^3.1.0",
+    "prettier-plugin-astro": "^0.12.2",
+    "unocss": "^0.57.7"
   }
 }
